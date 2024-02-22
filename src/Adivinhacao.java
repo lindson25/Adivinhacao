@@ -12,7 +12,7 @@ public class Adivinhacao {
         while (attempts <= 10) {
             System.out.println("Bem-vindo ao Jogo da Adivinhação! Tente descobrir um número inteiro entre 0 e 100. Tentativa: " + attempts + "/10");
             try {
-                if (scan.hasNextInt()) {
+                if (scan.hasNextInt()) { // Validação para checar se o número é inteiro.
                     int data_user = scan.nextInt();
                     
                     if (data_user == numb_random) {
